@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>820</x><y>250</y><w>140</w><h>120</h></coordinates><panel_attributes>contestants
+--
+contestantID
+firstName
+lastName
+addressLine1
+addressLine2
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>630</y><w>150</w><h>110</h></coordinates><panel_attributes>Requirements
+--
+accidentWaiver (PK)
+releaseofLiabilityForm (PK)
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>450</y><w>150</w><h>70</h></coordinates><panel_attributes>Cheese
+--
+typeofcheese(PK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>250</y><w>130</w><h>70</h></coordinates><panel_attributes>CheeseChases
+--
+location
+date
+time</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>400</y><w>170</w><h>70</h></coordinates><panel_attributes>injuries
+--
+Typeofinjury(PK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>240</y><w>450</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+&lt; win</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>290</y><w>450</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+&lt; participateIn</panel_attributes><additional_attributes>10;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>300</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>360</y><w>140</w><h>340</h></coordinates><panel_attributes>lt=-
+meets
+m1=2
+m2=*</panel_attributes><additional_attributes>10;310;90;310;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>310</y><w>70</w><h>160</h></coordinates><panel_attributes>lt=&lt;-
+usedIn
+m1=1..*
+m2=1</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>310</y><w>400</w><h>390</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;370;380;370</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>1030</y><w>100</w><h>70</h></coordinates><panel_attributes>Raceparticipants
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>1040</y><w>120</w><h>80</h></coordinates><panel_attributes>Injuries
+--
+injuryType(PK)
+description</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>1200</y><w>120</w><h>90</h></coordinates><panel_attributes>People
+--
+personID(PK)
+name
+dob
+address</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>1220</y><w>110</w><h>60</h></coordinates><panel_attributes>Races
+--
+raceTime</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>1200</y><w>150</w><h>90</h></coordinates><panel_attributes>Events
+--
+eventID(PK)
+eventDate</panel_attributes><additional_attributes></additional_attributes></element></diagram>
