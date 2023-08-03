@@ -29,7 +29,54 @@ class SoccerTeam:
     def printReport(self):
         print(f"{self.name}: Won :{self.__won} Lost :{self.__lost} Draw : {self.__draw} Team Goals: {self.__teamGoals} Conceded : {self.__oppositionGoals} Goal Difference : {self.goalDifference()} Points: {self.__score} ")
 
+seoul = SoccerTeam("Seoul Dynasty") 
+seoul.printReport() 
+seoul.addResult(2, 1) 
+seoul.addResult(2, 4) 
+seoul.addResult(0, 0) 
+seoul.printReport()
 
+
+class Group:
+    def __init__(self, name):
+        self.name = name
+        self.__teams = []
+
+    def addTeam(self, team):
+        self.__teams.append(team)
+
+    def addMatchResult(self, team1, team2, team1_goal, team2_goal):
+        team1.addResult(team1_goal, team2_goal)
+        team2.addResult(team2_goal, team1_goal)
+    
+    def printTable(self):
+        print(f"Group: {self.name}")
+        sorted_teams = sorted(self.__teams, key= lambda team: (team.getScore(), team.goalDifference()), reverse =True) 
+        for team in sorted_teams:
+            team.printReport()
+
+seoul = SoccerTeam("Seoul Dynasty")
+dalas = SoccerTeam("Dalas Fuel")
+florida = SoccerTeam("Florida Mayhem") 
+losAngeles = SoccerTeam("Los Angeles Valiant")
+group = Group("OWL") 
+group.addTeam(seoul) 
+group.addTeam(dalas) 
+group.addTeam(florida)
+group.addTeam(losAngeles)
+group.addMatchResult(dalas, florida, 3, 0) 
+group.addMatchResult(seoul, losAngeles, 2, 1) 
+group.addMatchResult(dalas, seoul, 4, 2) 
+group.addMatchResult(losAngeles, florida, 1, 6) 
+group.addMatchResult(losAngeles, dalas, 0, 2) 
+group.addMatchResult(florida, seoul, 0, 0)
+print("\n---------------------------------------------------") 
+group.printTable() 
+print("---------------------------------------------------\n")
+
+        
+
+        
     
     
         
