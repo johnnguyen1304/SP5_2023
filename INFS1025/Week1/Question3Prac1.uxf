@@ -1,33 +1,33 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>220</y><w>150</w><h>90</h></coordinates><panel_attributes>Person
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>10</x><y>300</y><w>150</w><h>90</h></coordinates><panel_attributes>Person
 --
 personID(PK)
 personName
 yearStarted
-yearLeft</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>220</y><w>120</w><h>90</h></coordinates><panel_attributes>Episode
+yearLeft</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>300</y><w>120</w><h>90</h></coordinates><panel_attributes>Episode
 --
 episodeID(PK)
-episodeAirDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>40</y><w>110</w><h>70</h></coordinates><panel_attributes>Theme
+episodeAirDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>120</y><w>110</w><h>70</h></coordinates><panel_attributes>Theme
 --
 themeID
-themeName</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>220</y><w>140</w><h>100</h></coordinates><panel_attributes>Toys
+themeName</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>300</y><w>140</w><h>100</h></coordinates><panel_attributes>Toys
 --
 toyID(PK)
 toyName
 toyType
-firstAppeared</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>240</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+firstAppeared</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>320</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=1..*
-&lt; appearsin</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>250</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>360</y><w>100</w><h>50</h></coordinates><panel_attributes>EpisodeToys
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>100</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=-
+&lt; appearsin</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>330</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>440</y><w>100</w><h>50</h></coordinates><panel_attributes>EpisodeToys
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>180</y><w>130</w><h>140</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=1..*
-&lt; episode theme</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>220</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
+&lt; episode theme</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>300</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=0..*
-starred &gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>260</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
+starred &gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>340</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=0..*
-produced &gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>160</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>130</y><w>100</w><h>40</h></coordinates><panel_attributes>PressentedBy
+produced &gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>240</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>210</y><w>100</w><h>40</h></coordinates><panel_attributes>PressentedBy
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>270</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>370</y><w>100</w><h>50</h></coordinates><panel_attributes>ProducedBy
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>350</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>170</x><y>450</y><w>100</w><h>50</h></coordinates><panel_attributes>ProducedBy
 --</panel_attributes><additional_attributes></additional_attributes></element></diagram>

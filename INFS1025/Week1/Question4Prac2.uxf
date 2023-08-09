@@ -1,45 +1,45 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>300</x><y>150</y><w>130</w><h>140</h></coordinates><panel_attributes>People
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>200</x><y>220</y><w>130</w><h>140</h></coordinates><panel_attributes>People
 --
 personID(PK)
 name
 nationID(FK)
 bendingAbilityID(FK)
 birthDate
-deathDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>150</y><w>160</w><h>80</h></coordinates><panel_attributes>Nations
+deathDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>470</x><y>220</y><w>160</w><h>80</h></coordinates><panel_attributes>Nations
 --
 nationID(PK)
 nationName
-captialCityID(FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>150</y><w>140</w><h>90</h></coordinates><panel_attributes>Cities
+captialCityID(FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>800</x><y>220</y><w>140</w><h>90</h></coordinates><panel_attributes>Cities
 --
 cityID(PK)
 cityName
-nationID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>380</y><w>130</w><h>90</h></coordinates><panel_attributes>Bending Abilities
+nationID</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>450</y><w>130</w><h>90</h></coordinates><panel_attributes>Bending Abilities
 --
 bendingAbilityID(PK)
 abilityName
-subcategoryOf(FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>340</y><w>130</w><h>120</h></coordinates><panel_attributes>Wars
+subcategoryOf(FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>410</y><w>130</w><h>120</h></coordinates><panel_attributes>Wars
 --
 warID(PK)
 startDate
 endDate
 nationID(FK)
-enemyNationID(FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>180</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-
+enemyNationID(FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>250</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=*
-m2=1
-belongs to &gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>280</y><w>60</w><h>120</h></coordinates><panel_attributes>lt=-
+m2=0..1
+belongs to &gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>350</y><w>60</w><h>120</h></coordinates><panel_attributes>lt=-
 m1=*
-m2=1
-has &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>170</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m2=0..*
+has &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>240</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=1..*
-&lt; belongs to</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>280</y><w>100</w><h>40</h></coordinates><panel_attributes>Avatar
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>190</y><w>180</w><h>110</h></coordinates><panel_attributes>lt=-
-m1=1
+&lt; belongs to</panel_attributes><additional_attributes>10;20;180;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>350</y><w>100</w><h>40</h></coordinates><panel_attributes>Avatar
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>260</y><w>180</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=0..1
 m2=1
-&lt; is</panel_attributes><additional_attributes>10;90;10;20;160;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>310</y><w>180</w><h>150</h></coordinates><panel_attributes>lt=-
+&lt; is</panel_attributes><additional_attributes>10;90;10;20;160;20</additional_attributes></element><element><id>Relation</id><coordinates><x>40</x><y>380</y><w>180</w><h>150</h></coordinates><panel_attributes>lt=-
 m1=1
 m2=4
-has &gt;</panel_attributes><additional_attributes>10;10;10;120;160;120</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>220</y><w>100</w><h>140</h></coordinates><panel_attributes>lt=-
+has &gt;</panel_attributes><additional_attributes>10;10;10;120;160;120</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>290</y><w>100</w><h>140</h></coordinates><panel_attributes>lt=-
 m1=*
 m2=*
 involved in &gt;</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element></diagram>

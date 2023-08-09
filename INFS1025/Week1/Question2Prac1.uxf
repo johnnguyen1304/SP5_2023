@@ -1,46 +1,46 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>100</y><w>150</w><h>110</h></coordinates><panel_attributes>Authors
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>252</x><y>96</y><w>180</w><h>132</h></coordinates><panel_attributes>Authors
 --
 authorID(PK)
 firstName
 lastName
-email</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>330</y><w>150</w><h>60</h></coordinates><panel_attributes>Books
+email</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>276</x><y>372</y><w>180</w><h>72</h></coordinates><panel_attributes>Books
 --
 bookName
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>100</y><w>130</w><h>110</h></coordinates><panel_attributes>Publication
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>96</y><w>156</w><h>132</h></coordinates><panel_attributes>Publication
 --
 ISBN(PK)
 title
-yearpublished</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>750</x><y>320</y><w>150</w><h>70</h></coordinates><panel_attributes>Article
+yearpublished</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>804</x><y>360</y><w>180</w><h>84</h></coordinates><panel_attributes>Article
 --
 title
 pages
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>240</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=-
-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>240</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-
-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>230</y><w>480</w><h>40</h></coordinates><panel_attributes>lt=-
-</panel_attributes><additional_attributes>10;20;460;20</additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>200</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>264</y><w>36</w><h>132</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>888</x><y>264</y><w>36</w><h>120</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>252</y><w>576</w><h>48</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes>10;20;460;20</additional_attributes></element><element><id>Relation</id><coordinates><x>612</x><y>216</y><w>36</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;-
 
-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>830</x><y>100</y><w>160</w><h>80</h></coordinates><panel_attributes>Publishers
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>96</y><w>192</w><h>96</h></coordinates><panel_attributes>Publishers
 --
 publisher(ID)
-publisherName</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>110</y><w>190</w><h>50</h></coordinates><panel_attributes>lt=-
+publisherName</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>696</x><y>108</y><w>228</w><h>60</h></coordinates><panel_attributes>lt=-
 m1=0..*
 m2=1
-&lt; publishes</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>380</y><w>100</w><h>30</h></coordinates><panel_attributes>chapterNo
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1030</x><y>320</y><w>100</w><h>70</h></coordinates><panel_attributes>KeyWords
+&lt; publishes</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>432</y><w>120</w><h>36</h></coordinates><panel_attributes>chapterNo
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1140</x><y>360</y><w>120</w><h>84</h></coordinates><panel_attributes>KeyWords
 --
-keyword(PK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>890</x><y>340</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
+keyword(PK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>972</x><y>384</y><w>192</w><h>60</h></coordinates><panel_attributes>lt=-
 m1=0..*
 m2=0..*
-has &gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>130</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=-
+has &gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>132</y><w>156</w><h>60</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=1..*
-writes &gt;</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>130</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=-
+writes &gt;</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>108</x><y>132</y><w>168</w><h>60</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=0..*
-&lt; has</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>110</y><w>100</w><h>70</h></coordinates><panel_attributes>Specialities
+&lt; has</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>108</y><w>120</w><h>84</h></coordinates><panel_attributes>Specialities
 --
-specialty(PK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>400</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=-
+specialty(PK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>348</x><y>456</y><w>60</w><h>120</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1..*</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>480</y><w>100</w><h>70</h></coordinates><panel_attributes>BookChapters
+m2=1..*</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>552</y><w>120</w><h>84</h></coordinates><panel_attributes>BookChapters
 --
 topic</panel_attributes><additional_attributes></additional_attributes></element></diagram>
