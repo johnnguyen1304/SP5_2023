@@ -1,7 +1,7 @@
 class Vehicle:
     def __init__(self, wheelCount, doorCount, VIN):
         self.wheelCount = wheelCount
-        self.doorCount = doorCount
+        self._doorCount = doorCount
         self.__VIN = VIN
 
     def getVIN(self):
@@ -31,6 +31,16 @@ class Bus(Vehicle):
             return seatCount
         return 0
 
+class Engine:
+    def __init__(self, engine_type):
+        self.__type = engine_type
+    
+    def setType(self, new_engine_type):
+        self.__type = new_engine_type
+    
+    def showDetails(self):
+        return "The engine is type:" +self.__type
+
 
 # Test the classes
 vehicle = Vehicle(4, 4, "ZE1D4")
@@ -39,3 +49,8 @@ bus = Bus(8, 2, "B0TW", 40)
 print("VIN number of Vehicle:", vehicle.vin)
 print("VIN number of Bus:", bus.vin)
 print("Seat Count of Bus:", bus.seatCount)
+
+
+
+engine = Engine("Diesel")
+print("-Engine Details-\n" + engine.showDetails())
