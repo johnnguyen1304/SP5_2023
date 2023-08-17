@@ -1,31 +1,31 @@
 class AcademicPublication:
     def __init__(self, year, title, authors=None):
-        self.year = year
-        self.title = title
-        self.authors = [] if authors is None else authors
+        self.__year = year
+        self.__title = title
+        self.__authors = [] 
 
     def addAuthor(self, author):
-        self.authors.append(author)
+        self.__authors.append(author)
 
     def getReference(self):
-        author_str = ', '.join(self.authors)
-        reference_str = f"Authors: {author_str}\nPublication Details: ({self.year}) {self.title}"
+        author_str = ', '.join(self.__authors)
+        reference_str = f"Authors: {author_str}\nPublication Details: ({self.__year}) {self.__title}"
         return reference_str
 
 # Example usage
-#publication = AcademicPublication(2023, "Advances in Python Programming")
-#publication.addAuthor("John Smith")
-#publication.addAuthor("Jane Doe")
+#publication = AcademicPublication(2023, "Father of The Atomic Bomb")
+#publication.addAuthor("Robert Oppenheimer")
+#publication.addAuthor("Christopher Nolan")
 #print(publication.getReference())
 
 class JournalArticle(AcademicPublication):
     def __init__(self, journalName, title, year, authors=None):
         super().__init__(year, title, authors)
-        self.journalName = journalName
+        self.__journalName = journalName
 
     def getReference(self):
         parent_reference = super().getReference()
-        reference_str = f"{parent_reference} In Journal of {self.journalName}."
+        reference_str = f"{parent_reference}.\nIn Journal of {self.__journalName}."
         return reference_str
 
 # Example usage
@@ -39,13 +39,10 @@ class ConferencePaper(AcademicPublication):
         super().__init__(year, title, authors)
         self.conference = None
 
-    def setConference(self, conferenceName, conferenceAcronym):
-        self.conference = f"{conferenceName} ({conferenceAcronym})"
-
     def getReference(self):
         parent_reference = super().getReference()
         if self.conference is not None:
-            reference_str = f"{parent_reference} In Proceedings of {self.conference}."
+            reference_str = f"{parent_reference}.\nIn Proceedings of {self.conference.name} {self.conference.acronym}."
         else:
             reference_str = parent_reference
         return reference_str
@@ -63,7 +60,7 @@ class Conference:
 
     def addPaper(self, paper):
         self.papers.append(paper)
-        paper.setConference(self.name, self.acronym)
+        paper.conference = self
 
 # Test cases
 article1 = JournalArticle("ACM Computing Survey", "Information retrieval on the web", 2000)
@@ -96,7 +93,7 @@ print(isinstance(acsw2021, Conference))
 print(isinstance(article1, JournalArticle))
 print(isinstance(article1, AcademicPublication))
 
-# Printing class names using type()
+
 print(type(paper2).__name__)
 print(type(article1).__name__)
 print(type(acsw2021).__name__)
