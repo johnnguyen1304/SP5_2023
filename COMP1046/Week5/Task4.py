@@ -10,27 +10,27 @@ class Shape(ABC):
         pass
 
 class Square(Shape):
-    def __init__(self, side):
-        self.side = side
+    def __init__(self, width):
+        self.__width = width
 
     def getArea(self):
-        return self.side * self.side
+        return self.__width * self.__width
 
     def draw(self):
-        for _ in range(self.side):
-            print("#" * self.side)
+        for _ in range(self.__width):
+            print("#" * self.__width)
 
 class Triangle(Shape):
     def __init__(self, base, height):
-        self.base = base
-        self.height = height
+        self.__base = base
+        self.__height = height
 
     def getArea(self):
-        return 0.5 * self.base * self.height
+        return 0.5 * self.__base * self.__height
 
     def draw(self):
-        for i in range(1, self.height + 1):
-            print("*" * int((i / self.height) * self.base))
+        for i in range(1, self.__height + 1):
+            print("*" * int((i / self.__height) * self.__base))
 
 # Test cases
 shapes = [Square(4), Triangle(7, 5)]
