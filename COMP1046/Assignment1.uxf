@@ -1,0 +1,53 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>430</x><y>120</y><w>180</w><h>90</h></coordinates><panel_attributes>ALLTHATDICE- Main Screen
+--
+-options: char ['r', 's', 'p', 'q']
+--
++getOptions():</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>300</y><w>180</w><h>180</h></coordinates><panel_attributes>Game
+--
+-points: int
+#games_played: int
+-numberofWins : int
+-numberofChips : int
+-numberofPlayers : int
+-numberofDice :int
+--
++playGame()
++showResults()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>320</y><w>140</w><h>150</h></coordinates><panel_attributes>RegisterPlayer
+-
+-username: str
+-bet: int
+-amount: int
+-
+getUserDetails():</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>610</y><w>170</w><h>130</h></coordinates><panel_attributes>Maxi_Game
+--
+-totalValues: int
+--
++checknumberofPlayer()
++comparetotalValues()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>610</y><w>170</w><h>130</h></coordinates><panel_attributes>Odd_Even_Game
+--
+choice: char
+strenght: int
+--
++checknumberofPlayer()
++checknumberofChips()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>610</y><w>170</w><h>130</h></coordinates><panel_attributes>Bunco_Game
+--
+-numberofRound: int
+--
++checknumberofRound()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>200</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1
+</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>370</y><w>240</w><h>50</h></coordinates><panel_attributes>lt=-
+m1= 1..*
+m2= 1
+</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>470</y><w>550</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>250;10;250;140;250;70;530;70;530;140;530;70;10;70;10;140</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>120</y><w>140</w><h>140</h></coordinates><panel_attributes>Leaderboard
+--
++player[]
+--
++addPlayer()
++updateBoard()
++showBoard()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>160</y><w>160</w><h>40</h></coordinates><panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>780</x><y>190</y><w>200</w><h>70</h></coordinates><panel_attributes>VUONG KHANH NGUYEN	
+nguvy062@mymail.unisa.edu.au
+110243921
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>
