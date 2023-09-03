@@ -1,0 +1,80 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>240</x><y>200</y><w>176</w><h>232</h></coordinates><panel_attributes>Property
+--
+PropertyID (PK)
+PropertyType
+Bedrooms
+Bathrooms
+LivingRoom
+Lounge
+DiningArea
+StudyRoom
+FrontYard
+Backyard
+EnergyUsed
+InternetOptions
+ParkingOptions
+LotSize
+LocationID (FK to Location)
+PurchasePrice
+RentalPrice</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>200</y><w>224</w><h>176</h></coordinates><panel_attributes>Location
+--
+LocationID (PK)
+Suburb
+DistanceToMall
+DistanceToPublicSchool
+DistanceToPrivateSchool
+DistanceToPreschool
+DistanceToPrimarySchool
+DistanceToSecondarySchool
+LandmarkID (FK to Landmark)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>848</x><y>200</y><w>128</w><h>72</h></coordinates><panel_attributes>Landmark
+--
+LandmarkID (PK)
+Name
+Type</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>24</y><w>144</w><h>80</h></coordinates><panel_attributes>CrimeIncident
+--
+IncidentID (PK)
+IncidentDate
+IncidentType
+LocationID (FK to Location)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>512</x><y>504</y><w>128</w><h>56</h></coordinates><panel_attributes>ShoppingMall
+--
+MallID (PK)
+MallName</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>8</y><w>168</w><h>80</h></coordinates><panel_attributes>School
+--
+SchoolID (PK)
+SchoolName
+SchoolType
+SchoolLevel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>256</x><y>608</y><w>152</w><h>72</h></coordinates><panel_attributes>PropertyAttribute
+--
+AttributeID (PK)
+AttributeName
+PropertyValue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>504</y><w>176</w><h>64</h></coordinates><panel_attributes>PropertyLandmarkAssociation
+--
+PropertyID (FK to Property)
+LandmarkID (FK to Landmark)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>56</x><y>488</y><w>176</w><h>64</h></coordinates><panel_attributes>PropertyAttributeAssociation
+--
+PropertyID (FK to Property)
+AttributeID (FK to PropertyAttribute)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>24</x><y>104</y><w>184</w><h>56</h></coordinates><panel_attributes>PropertySchoolAssociation
+--
+PropertyID (FK to Property)
+SchoolID (FK to School)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>272</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+belong to &gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>744</x><y>224</y><w>120</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+has &gt;</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>424</y><w>40</w><h>200</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+has</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>224</x><y>512</y><w>112</w><h>24</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>80</y><w>40</w><h>136</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+near</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>128</y><w>136</w><h>24</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>632</x><y>96</y><w>48</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=*
+has &gt;</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>264</y><w>536</w><h>176</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=*
+has &gt;</panel_attributes><additional_attributes>10;190;640;190;640;10</additional_attributes></element><element><id>Relation</id><coordinates><x>752</x><y>408</y><w>24</w><h>112</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>568</x><y>368</y><w>40</w><h>152</h></coordinates><panel_attributes>lt=-
+m1=*
+m2=1
+has</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element></diagram>
