@@ -23,7 +23,7 @@ class TestTemperature(unittest.TestCase):
         with self.assertRaises(TypeError):
             # Try to create a Temperature object with inappropriate data types
             Temperature(True)
+        with self.assertRaises(TypeError):
             Temperature("100")
 
-if __name__ == '__main__':
-    unittest.main()
+unittest.main()
